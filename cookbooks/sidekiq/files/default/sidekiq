@@ -23,6 +23,7 @@ pid_file="${pid_dir}/${worker_ref}.pid"
 log_file="${app_root}/log/${worker_ref}.log"
 conf_file="/data/${app_name}/shared/config/${worker_ref}.yml"
 app_user=$(stat -L -c"%U" "${app_root}")
+shutdown_timeout=60
 
 sidekiq="${app_root}/ey_bundler_binstubs/sidekiq"
 sidekiqctl="${app_root}/ey_bundler_binstubs/sidekiqctl"
@@ -63,7 +64,7 @@ start ()
 stop ()
 {
   # stop using sidekiqctl
-  sudo -u "${app_user}" -H "${sidekiqctl}" stop "${pid_file}"
+  sudo -u "${app_user}" -H "${sidekiqctl}" stop "${pid_file}" "${shutdown_timeout}"
   exit $?
 }
 
