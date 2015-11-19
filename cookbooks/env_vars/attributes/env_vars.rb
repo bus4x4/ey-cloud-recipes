@@ -14,6 +14,7 @@ default[:env_vars] = {
   :DOMAIN => "www.i-bus.com.au",
   :AWS_ACCESS_KEY_ID => "AKIAIO5BDCVLV7V6XZUQ",
   :AWS_SECRET_ACCESS_KEY => "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",
+  :FACEBOOK_TOKEN => "CAACEdEose0cBAK8o80ODGnQ2CDTOynQkogneZB2Vw3JlBZBzBVJL1vkbAu5fAsvNjZCrC1RZAdNGBGeXdl9QIkKGHTo1nRw0c1aXnZBDZCyPbpn3t2PuzXIpsE5b48uXcYwwfw0hbmhowjtUyIpbR9rw6jquXGulvb6NXgp8EzprQzbVGVg4ZC0t8ZCfDdeRwqm5izdaSy1KSwZDZD",
   :GMAIL_USERNAME => "",
   :GMAIL_PASSWORD => ""
 }
